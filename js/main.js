@@ -16,18 +16,12 @@ const btnMisionP = document.querySelector('#btn-p-mision');
 
 const btnMision = document.querySelector('#btn-mision');
 
-// //variables de sobrecivi-responsive
-// const sobreCiviBtn = document.querySelector('#about-civi-selector');
-// const sobreCiviElement = document.querySelectorAll('.about-civi-mobile');
-
-
 //event:
 btnVision.addEventListener('click' , btnOnClickvision);
 btnMision.addEventListener('click' , btnOnClickMision);
 
-// sobreCiviBtn.addEventListener('click' , showElement);
-
 //functions: 
+
 function btnOnClickvision(){
     visionDiv.classList.toggle('vision');
     visionDiv.classList.toggle('vision2');
@@ -53,10 +47,6 @@ function btnOnClickMision(){
         btnMisionP.innerText ='Cerrar';
     };
 }
-
-// function showElement(){
-//     sobreCiviElement.classList.toggle('remove');
-// }
 
 
 
