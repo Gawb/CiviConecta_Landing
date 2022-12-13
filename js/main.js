@@ -26,7 +26,8 @@ function btnOnClickvision(){
     visionDiv.classList.toggle('vision');
     visionDiv.classList.toggle('vision2');
     visionP.classList.toggle('remove');
-    visionImg.classList.toggle('img-btn');
+    visionImg.classList.toggle('img-btn-up');
+    visionImg.classList.toggle('img-btn-down');
     
     if(btnVisionP.innerText =='Cerrar'){
         btnVisionP.innerText ='Ver';
@@ -39,7 +40,8 @@ function btnOnClickMision(){
     misionDiv.classList.toggle('mision');
     misionDiv.classList.toggle('mision2');
     misionP.classList.toggle('remove');
-    misionImg.classList.toggle('img-btn');
+    misionImg.classList.toggle('img-btn-up');
+    misionImg.classList.toggle('img-btn-down');
     
     if(btnMisionP.innerText =='Cerrar'){
         btnMisionP.innerText ='Ver';

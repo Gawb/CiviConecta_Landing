@@ -11,10 +11,13 @@ const blockElements  = document.querySelectorAll('.block');
 
 const rootStyles = document.documentElement.style;
 
+
 let blockCounter = 0;
 let blockPosition = 0;
 let isInTransition = false;
 let key = 0;
+let widthBlock = 34.4;
+//363
 
 const DIRECTION ={
     RIGHT: 'RIGHT',
@@ -22,69 +25,75 @@ const DIRECTION ={
 };
 
 const getTransformValue = ()=>
-    Number(rootStyles.getPropertyValue('--slide-transform').replace('px',''));
+    Number(rootStyles.getPropertyValue('--slide-transform').replace('%',''));  
 
 const reorderSlide = ()=>{
     const transformValue = getTransformValue();
+    console.log(transformValue);  
     rootStyles.setProperty('--transition', 'none');
     if(blockCounter === 2){
         containerBlock.appendChild(containerBlock.firstElementChild);
-        rootStyles.setProperty('--slide-transform', `${transformValue+ 363}px`);
+        rootStyles.setProperty('--slide-transform', `${transformValue+ widthBlock}%`);
         blockCounter--;
         blockPosition = blockPosition -1;
     }else if(blockCounter === 0){
         containerBlock.prepend(containerBlock.lastElementChild);
         if (key === 0){
-            rootStyles.setProperty('--slide-transform', `${transformValue - 387}px`);
+            rootStyles.setProperty('--slide-transform', `${transformValue - 36}%`);
             key++; 
-            blockPosition = blockPosition -1;           
+            blockPosition = blockPosition +1;           
         }else{
-            rootStyles.setProperty('--slide-transform', `${transformValue - 363}px`);
+            rootStyles.setProperty('--slide-transform', `${transformValue - widthBlock}%`);
         }
-        blockPosition = blockPosition +2;
         blockCounter++;
     }
-    containerBlock.children[2].classList
+    
     blockElements.forEach( ( everyBlock , i )=>{
         containerBlock.children[i].classList.add('block-unselected');
         containerBlock.children[i].children[1].classList.remove('block-info');
         containerBlock.children[i].children[1].classList.add('unselected-box-info');
-        // containerBlock.children[i].children[1].children[0].children[0].classList.toggle('curtain');
+        containerBlock.children[i].children[0].children[0].classList.add('curtain');
+        
     })
     containerBlock.children[2].classList.remove('block-unselected');
     containerBlock.children[2].children[1].classList.remove('unselected-box-info');
     containerBlock.children[2].children[1].classList.add('block-info');
-    // containerBlock.children[2].children[1].children[0].children[0].classList.remove('curtain')
+    containerBlock.children[2].children[0].children[0].classList.remove('curtain');
  
-    // blockElements.forEach( ( everyBlock , i )=>{
-    //     blockElements[i].classList.add('block-unselected');
-    // })
-    // blockElements[blockPosition].classList.remove('block-unselected');
-
     isInTransition =  false;
-    console.log('posición: '+blockPosition);
-    console.log('blockCounter: '+blockCounter);
-    console.log({containerBlock});
+    pointSelecter();
 
 }
 
 const moveSlide = (direction)=>{
     if(isInTransition) return;
     const transformValue = getTransformValue();
-    rootStyles.setProperty('--transition', 'transform 1s');
+    rootStyles.setProperty('--transition', 'transform 0.6s');
     isInTransition = true;
     if(direction===DIRECTION.LEFT){
-        rootStyles.setProperty('--slide-transform', `${transformValue + 363}px`);
+        rootStyles.setProperty('--slide-transform', `${transformValue + widthBlock}%`);
         blockCounter--;
-        blockPosition = blockPosition -1; 
+        blockPosition--; 
 
     }else if(direction===DIRECTION.RIGHT){
-        rootStyles.setProperty('--slide-transform', `${transformValue - 363}px`);
+        rootStyles.setProperty('--slide-transform', `${transformValue - widthBlock}%`);
         blockCounter++
-        blockPosition = blockPosition +1; 
+        blockPosition=blockPosition+2; 
     }
 };
 
+const pointSelecter = () =>{
+    point.forEach((everyPoint , i) =>{
+        point[i].classList.remove('selected')
+    })
+
+    if(blockPosition === 8){
+        blockPosition = 0;
+    }else if(blockPosition === -1){
+        blockPosition =7;
+    }
+    point[blockPosition].classList.add('selected');
+}
 
 
 arrowCarrucelRight.addEventListener('click',()=> moveSlide(DIRECTION.RIGHT));
@@ -98,23 +107,7 @@ reorderSlide();
 
 //blockElements.length - 1
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // let positionArrow = 0;
-
-
-
 
 // //Arrows
 // arrowCarrucelR.addEventListener('click',()=>{
