@@ -5,24 +5,29 @@
 /*----*/
 :root{
     /* color variables */
-    --greenCivi: #96cb76;
-    --greenCiviOpa: #96cb7620;
-    --pinkCivi: #ec5f7b;
-    --BlueCivi: #7468e5;
-    --BlueCiviDark:#645cd4;
-    --BlueCiviOpa: #7468e520;  
-    --yellowCivi: #f5cf57;
-    --blackCivi: #4d4d4d;
-    --greyCivi: #808080;
-    --greypointCivi: #cccccc ;
-    --greyCiviOpa: #80808020; 
-    --whiteCivi: #f2f2f2;
-    --white: #ffffffff;
+    --greenCivi:      #96cb76;
+    --greenCiviOpa:   #96cb7620;
+    --pinkCivi:       #ec5f7b;
+    --BlueCivi:       #7468e5;
+    --BlueCiviDark:   #645cd4;
+    --BlueCiviOpa:    #7468e520;  
+    --yellowCivi:     #f5cf57;
+    --blackCivi:      #4d4d4d;
+    --greyCivi:       #808080;
+    --greypointCivi:  #cccccc ;
+    --greyCiviOpa:    #80808020; 
+    --whiteCivi:      #f2f2f2;
+    --white:          #ffffffff;
 
-    --BlueCiviOpaCurtain: #7468e550;
+    --BlueCiviOpaCurtain:   #7468e550;
     --yellowCiviOpaCurtain: #f5cf5750;
-    --greenCivyOpaCurtain: #96cb7650;
-    --pinkCiviOpaCurtain: #ec5f7b50;
+    --greenCivyOpaCurtain:  #96cb7650;
+    --pinkCiviOpaCurtain:   #ec5f7b50;
+
+    --CelesteCivi: #54bfed;
+    --VioletaCivi: #c275ef;
+    --NaranjaCivi: #f48e76;
+    --AguaCivi:    #2dba9f;
 
     /* Font Size variables */
     --sm: 14px;
@@ -970,6 +975,45 @@ z-index: 1;
  border-radius: 10px;
  overflow:hidden;
 }
+.member-one{
+    background-image: url(../images/photography/member/Cata\ -\ R.jpg);
+    background-position-y: -76px !important;
+}
+.member-two{
+    background-image: url(../images/photography/member/Cossio\ -\ R.jpg);
+    background-size: 387px !important;
+    background-position-y: -76px !important;
+    background-position-x: -53px !important;
+
+}
+.member-three{
+    background-image: url(../images/photography/member/Claudia\ Caroca\ -\ R.jpg);
+    background-size: 300px !important;
+    background-position-y: -54px !important;
+    background-position-x: -18px !important;
+}
+.member-four{
+    background-image: url(../images/photography/member/Kari\ -\ R.jpg);
+    background-size: 300px !important;
+    background-position-y: -91px !important;
+    background-position-x: -16px !important;
+}
+.member-five{
+    background-image: url(../images/photography/member/Fran\ -\ R.jpg);
+    background-position-y: -66px !important;
+
+}
+.member-six{
+    background-image: url(../images/photography/member/Mayed\ -\ R.jpg);
+    background-position-y: -79px !important;
+    background-position-x: -6px !important;
+}
+.member-seven{
+    background-image: url(../images/photography/member/Meli\ -\ R.jpg);
+    background-size: 354px !important;
+    background-position-y: -74px !important;
+    background-position-x: -45px !important;
+}
 .img-section>img{
     max-width: 177px;
     padding: 10px 40px;
@@ -996,21 +1040,39 @@ z-index: 1;
     justify-content: center;
     align-items: center;
     padding: 0;
+    text-align: center;
 }
 .info-member>h3{
     margin-bottom: 0;
+    color: var(--blackCivi);
+    text-align: center;
 }
 .red-name{
     color: var(--pinkCivi) !important;
+    min-width: 260px !important;
 }
 .yellow-name{
     color: var(--yellowCivi) !important;
+    text-align: center !important;
+    min-width: 280px !important;
 }
 .green-name{
     color: var(--greenCivi) !important;
 }
 .blue-name{
     color: var(--BlueCivi) !important;
+}
+.skyblue-name{
+    color: var(--CelesteCivi) !important;
+}
+.purple-name{
+    color: var(--VioletaCivi) !important;
+}
+.aqua-name{
+    color: var(--AguaCivi) !important;
+}
+.orange-name{
+    color: var(--NaranjaCivi) !important;
 }
 
 .info-member>p{
