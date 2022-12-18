@@ -1119,7 +1119,7 @@ align-items: flex-start;
     height: 68px;
     border-radius: 10px;
     background-color: var(--greenCivi);
-    background-image: url(/icons/Hi\ Hand\ -\ Square\ -\ Civicon.svg);
+    background-image: url(../icons/Hi\ Hand\ -\ Square\ -\ Civicon.svg);
 }
 .contact-us>h2{
     color: var(--greenCivi);
