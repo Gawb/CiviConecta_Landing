@@ -956,7 +956,7 @@ z-index: 1;
     margin: 0;
 }
 .team__intro>p{
-    font-size: var(--sm);
+    font-size: var(--lg);
     margin: 0 ;
     padding: 0 6%;
 
@@ -1084,6 +1084,9 @@ z-index: 1;
 .orange-name{
     color: var(--NaranjaCivi) !important;
 }
+.degrade-name{
+    color: rgb(116,104,229) !important;
+}
 
 .info-member>p{
     margin-top: 0;
@@ -1184,7 +1187,7 @@ form label{
 .input-info{
     padding: 1% 1% 1% 6%;
     margin:  6px 0;
-    color: var(--greenCivi);
+    color: var(--greyCivi);
     border: none;
     border-radius: 6px;
     height: 34px;
@@ -1197,8 +1200,9 @@ form textarea::placeholder {
     padding-top: 2% !important;
 }
 .input-info::placeholder{
-    color: var(--greenCivi);
+    color: var(--greyCivi);
     margin-left: 2%;
+    font-family: Nunito-Variablefont_wght;;
 }
 form button{
     color: var(--white);
