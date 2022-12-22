@@ -985,7 +985,7 @@ z-index: 1;
     background-position-y: -76px !important;
 }
 .member-two{
-    background-image: url(../images/photography/member/Cossio\ -\ R.jpg);
+    background-image: url(../images/photography/member/kizioY.jpeg);
     background-size: 387px !important;
     background-position-y: -76px !important;
     background-position-x: -53px !important;
@@ -1004,8 +1004,10 @@ z-index: 1;
     background-position-x: -16px !important;
 }
 .member-five{
-    background-image: url(../images/photography/member/Fran\ -\ R.jpg);
+    background-image: url(../images/photography/member/franG.jpeg);
     background-position-y: -66px !important;
+    background-position-x: -10px !important;
+    background-size: 300px !important;
 
 }
 .member-six{
@@ -1068,6 +1070,8 @@ z-index: 1;
 }
 .green-name{
     color: var(--greenCivi) !important;
+    text-align: center !important;
+    min-width: 280px !important;
 }
 .blue-name{
     color: var(--BlueCivi) !important;
