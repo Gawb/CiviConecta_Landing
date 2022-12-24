@@ -559,12 +559,12 @@ nav{
 }
 .vision-mision-content{
     display: grid;
-    grid-template-columns: 8% 42% 42% 8%;
+    grid-template-columns: 10% 40% 40% 10%;;
     padding-bottom: 50px;
     height: 334px;
 }
 .vision-mision-content> img:nth-child(1){
-    left: 11.6%;
+    left: 13.6%;
 
 }
 .vision-mision-content> img:nth-child(3){
@@ -1020,6 +1020,12 @@ z-index: 1;
     background-size: 354px !important;
     background-position-y: -74px !important;
     background-position-x: -45px !important;
+}
+.member-eigth{
+    background-image: url(../images/photography/member/Kevin\ -\ R.jpg);
+    background-size: 342px !important;
+    background-position-x: -46px !important;
+    background-position-y: -38px !important;
 }
 .img-section>img{
     min-width: 245px;
