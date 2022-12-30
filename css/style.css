@@ -371,11 +371,7 @@ nav{
 .activ> a{
     font-weight: lighter !important;
 }
-@media (max-width: 495px){
-    .menu-mobile{
-        width: 80%;
-      }
-}
+
 
 /* -----START Principal section---- */
 .principal{
@@ -541,6 +537,57 @@ nav{
     text-align: justify;
     padding-left: 4%;
 }
+/* ----vision y misión */
+.vision_mission{
+    padding: 0 10%;
+    margin: 52px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+.vision_mission__box{
+    background-color: var(--greyCiviOpa);
+    width: 48%;
+    border-radius: 16px;
+    
+
+}
+.vision_mission__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.vision_mission__header>img{
+    width: 18%;
+    padding-left: 14px;
+    margin-top: -28px;
+}
+.vision_mission__header>button{
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    font-weight: bold;
+    font-size: var(--md);
+    background-color: var(--BlueCivi);
+    border: none;
+    margin-right: 16px;
+    padding:1px 4px 1px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+.vision_mission__arrow{
+    width: 32px;
+    transform: rotate(180deg);
+}
+.vision_mission__info>p{
+    margin: 0;
+    padding: 0 17px 48px;
+    color: var(--greyCivi);
+    font-size: var(--sm);
+    text-align: justify;
+}
+/* ----fin visión mision */
 @media (max-width: 700px){
     .quote{
         margin-top: 6%;
@@ -555,127 +602,32 @@ nav{
     .quote > p{
     padding: 1% 10%;
     }
+}
+@media (max-width: 850px){
+    .vision_mission{
+        flex-direction: column;
+        padding: 0 4%    
+    }
+    .vision_mission__box{
+        width: 100%;
+        margin: 20px 0;     
+    }
+    /* .vision_mission__header>img {
+        width: 42px;
+    } */
+    .vision_mission__header>h2 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .vision_mission__header>button {
+        font-size: var(--sm);
+    }
+    .vision_mission__arrow {
+        width: 20px;
+    }
 
 }
-.vision-mision-content{
-    display: grid;
-    grid-template-columns: 10% 40% 40% 10%;;
-    padding-bottom: 50px;
-    height: 334px;
-}
-.vision-mision-content> img:nth-child(1){
-    left: 13.6%;
 
-}
-.vision-mision-content> img:nth-child(3){
-    left: 52.8%;
-
-}
-.vision-mision-content > div{
-    background-color: var(--greyCiviOpa);
-}
-.vision-mision-content >div > p{
-    color: var(--greyCivi);
-    font-weight: bold;
-    font-size: var(--sm);
-    word-spacing: 0.25em;
-    text-align: justify;
-    padding: 0% 4% 6%;
-    margin: 0% 0%;
-    
-}
-.container_mv{
-    /* margin: 6%; */
-    border-radius: 16px;
-    
-}
-.vision{
-    grid-column: 2;
-    margin: 6% 4% 6% 6%;
-   
-}
-.vision2{
-    grid-column: 2;
-    margin: 6% 4% 6% 6%;
-    height: 82px;
-    
-}
-.mision{
-    margin: 6% 6% 6% 4%;
-    grid-column: 3;
-}
-.mision2{
-    margin: 6% 6% 6% 4%;
-    grid-column: 3;
-    height: 82px;
-}
-.vision-mision-content__box{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1% 4%;
-}
-.vision-mision-content__box > h2{
-padding-right: 20%;
-}
-.yellow-HeartBrain{
-    width: 92px;
-    position: absolute;
-    padding-top: 1%;
-}
-.btnp{
-    color: var(--whiteCivi);
-    font-weight: bold;
-    font-size: var(--md);
-    cursor: pointer;
-    padding: 0%;
-    margin: 0%;
-}
-.open-close-btn{
-    background-color: var(--BlueCivi);
-    color: var(--whiteCivi);
-    border: none;
-    font-weight: bold;
-    font-size: var(--md);
-    cursor: pointer;
-    /* letter-spacing: 0.06em; */
-    border-radius: 6px;
-    padding: 0.6% 1%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    width: 94px;
-
-}
-.open-close-btn img{
-   width: 26px;
-   height: 26px;
-}
-.img-btn-down{
-    transform: rotate(180deg);
-    transition-duration: 0.6s;
-}
-.img-btn-up{
-    transform: rotate(0deg);
-    transition-duration: 0.6s;
-}
-@media (max-width: 1412px)  {
-
-    .vision-mision-content__box > h2{
-        padding-right: 12%;
-        }
-
-}
-@media (max-width: 1290px)  {
-
-    .vision-mision-content__box > h2{
-        padding-right: 6%;
-        }
-
-}
-.remove{
-    display: none;
-}
 
 /* ---- TherSection --- Carrucel ----- */
 .third-art{
@@ -1229,6 +1181,21 @@ form button{
 
 }
 
+@media (max-width:740px ){
+    .contact-us {
+        margin: 6% 12% 494px;
+        padding: 28px 4%;
+    }
+    .form {
+        width: 88%;
+        margin: 368px 0% 4%;
+    }
+    .contact-us>p {
+        width: 72%;
+    }
+
+}
+
 /* ---- FOOTER ----- */
 footer{
     /* width: 100%;*/
@@ -1323,4 +1290,81 @@ margin: 0 4px;
 }
 .copyright p:nth-child(2){
     margin-top: 6px;
+}
+
+@media (max-width:1000px ){
+    footer{
+
+        height: 100%; 
+        background-color: var(--BlueCivi);
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 31% 8% 44% 16%;
+        align-items: center;
+        margin: 0% 6%;
+        border-radius: 28px 28px 0px 0px; 
+    
+    }
+    .logo-footer{
+        grid-column: 1;
+        grid-row: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+    }
+    .social-media{
+        grid-column: 1;
+        grid-row: 2;
+        display: flex;
+        align-items: center;
+        justify-content:center; 
+        margin-bottom: 30px;
+    }
+    .menu-footer{
+        grid-column: 1;
+        grid-row: 3;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        /* justify-content:space-around;  */
+        margin-top: 0px;
+    }
+    .menu-footer ul{
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        padding: 0 11%
+    
+    }
+    .menu-footer ul li:nth-child(1){ 
+        padding-top: 12px;
+    }
+    .menu-footer ul li:nth-child(4){ 
+        padding-bottom:  12px;
+    }
+    .menu-footer ul li a{ 
+        padding: 6px 22px;
+    }
+    .copyright{
+        grid-column: 1;
+        grid-row: 4; 
+        margin-top: 18px; 
+        align-items: center; 
+    }
+    .copyright p:nth-child(2){
+        margin-top: 0px;
+        padding: 0 26%
+    }
+
+}
+@media (max-width: 495px){
+    .menu-mobile{
+        width: 100%;
+      }
+      .third-art>h1 {
+        width: 300px;
+    }
 }
