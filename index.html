@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="/logos/CiviConecta---Favicon---512x512.png">
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>CiviConecta</title>
 </head>
@@ -22,7 +23,7 @@
             <div class="menu-mobile__nav-element">
                 <ul>
                     <li>
-                        <a href="#inicio">Inicio</a>
+                        <a id="link_beginning" href="#inicio">Inicio</a>
                     </li>
                     <li>
                         <p  id= "about-civi-selector" >Sobre Civi
@@ -31,24 +32,24 @@
                     </li>
                     <div class="">
                         <li id="about-civi-mobile" class="about-civi-mobile">
-                            <a href="#sobre-civi">Nuestro Servicio</a>
+                            <a id="link_our_services" href="#sobre-civi">Nuestro Servicio</a>
                         </li>
                         <li id="about-civi-mobile" class="about-civi-mobile">
-                            <a href="#Ventajas">Ventajas</a>
+                            <a id="link_advantage" href="#Ventajas">Ventajas</a>
                         </li>
                     </div>
     
                     <li>
-                        <a href="#Profesionales">Profesionales</a>
+                        <a id="link_profesionals" href="#Profesionales">Profesionales</a>
                     </li>
                     <li>
-                        <a href="">Testimonios</a>
+                        <!-- <a id="link_testimonials" href="#testimonios">Testimonios</a> -->
                     </li>
                     <li>
-                        <a href="#Contacto">Contacto</a>
+                        <a id="link_contact" href="#Contacto">Contacto</a>
                     </li>
                 </ul>
-                <button type="button">Ingresar</button>
+                <button type="button" onclick="location.href='./mantenance_curtain.html';">Ingresar</button>
             </div>
     
     
@@ -82,7 +83,7 @@
                     <a href="#Profesionales">Profesionales</a>
                 </li> 
                 <li>
-                    <a href="">Testimonios</a>
+                    <!-- <a href="">Testimonios</a> -->
                 </li>
                 <li>
                     <a href="#Contacto">Contacto</a>
@@ -92,7 +93,7 @@
         </div>
          
         <div class="div-btn-login">
-            <button class="btn-login-nav">Ingresar</button>
+            <button class="btn-login-nav" onclick="location.href='./mantenance_curtain.html';">Ingresar</button>
         </div>        
     </nav> 
     <section class="principal">
@@ -308,7 +309,7 @@
                         <h3 class="blue-name">Catalina Acevedo Setz</h3>
                         <p>Profesora de Castellano</p>
                         <div class="social-member">
-                            <img src="./icons/LinkedIn - Civicon.svg" alt="LinkedIn" />
+                            <a href="https://www.linkedin.com/in/catalina-acevedo-setz/"><img src="./icons/LinkedIn - Civicon.svg" alt="LinkedIn" /></a>                            
                         </div>
                     </div>
                 </div>
@@ -319,7 +320,7 @@
                         <h3 class="yellow-name">Eduardo Cossio Brante</h3>
                         <p>Profesor de Castellano</p>
                         <div class="social-member">
-                            <img src="./icons/LinkedIn - Civicon.svg" alt="LinkedIn" />
+                            <a href="https://www.linkedin.com/in/eduardo-cossio-brante-/"><img src="./icons/LinkedIn - Civicon.svg" alt="LinkedIn" /></a>  
                         </div>
                     </div>
                 </div>
@@ -330,7 +331,7 @@
                         <h3 class="skyblue-name">Claudia Caroca Aravena</h3>
                         <p>Profesora de Inglés</p>
                         <div class="social-member">
-                            <img src="./icons/LinkedIn - Civicon.svg" alt="LinkedIn" />
+                            <a href=""><img src="./icons/LinkedIn - Civicon.svg" alt="LinkedIn" /></a>  
                         </div>
                     </div>
                 </div>
@@ -341,7 +342,7 @@
                         <h3 class="purple-name">Karina Loch Arellano</h3>
                         <p>Psicóloga </p>
                         <div class="social-member">
-                            <img src="./icons/LinkedIn - Civicon.svg" alt="LinkedIn" />
+                            <a href="https://www.linkedin.com/in/karina-loch-arellano-0b993a259"><img src="./icons/LinkedIn - Civicon.svg" alt="LinkedIn" /></a>  
                         </div>
                     </div>
                 </div>
@@ -352,7 +353,7 @@
                         <h3 class="green-name">Francisca Norambuena Alarcón</h3>
                         <p>Profesora de Castellano</p>
                         <div class="social-member">
-                            <img src="./icons/LinkedIn - Civicon.svg" alt="LinkedIn" />
+                            <a href="https://www.linkedin.com/in/maria-francisca-norambuena-alarc%C3%B3n-88b30946"><img src="./icons/LinkedIn - Civicon.svg" alt="LinkedIn" /></a>  
                         </div>
                     </div>
                 </div>
@@ -363,7 +364,7 @@
                         <h3 class="aqua-name">Mayed Sandoval Cea</h3>
                         <p>Profesora de Educación Física</p>
                         <div class="social-member">
-                            <img src="./icons/LinkedIn - Civicon.svg" alt="LinkedIn" />
+                            <a href=""><img src="./icons/LinkedIn - Civicon.svg" alt="LinkedIn" /></a>  
                         </div>
                     </div>
                 </div>
@@ -374,7 +375,7 @@
                         <h3 class="red-name">Melissa Traslaviña Marambio</h3>
                         <p>Profesora de Educación Básica</p>
                         <div class="social-member">
-                            <img src="./icons/LinkedIn - Civicon.svg" alt="LinkedIn" />
+                            <a href=""><img src="./icons/LinkedIn - Civicon.svg" alt="LinkedIn" /></a>  
                         </div>
                     </div>
                 </div>
@@ -385,7 +386,7 @@
                         <h3 class="blue-name">Kevin Baraona Valdivia</h3>
                         <p>Diseñador Gráfico</p>
                         <div class="social-member">
-                            <img src="./icons/LinkedIn - Civicon.svg" alt="LinkedIn" />
+                            <a href=""><img src="./icons/LinkedIn - Civicon.svg" alt="LinkedIn" /></a>  
                         </div>
                     </div>
                 </div>
@@ -434,7 +435,7 @@
                     <a href="#Profesionales">Profesionales</a>
                 </li>
                 <li>
-                    <a href="">Testimonio</a>
+                    <!-- <a href="">Testimonio</a> -->
                 </li>
                 <li>
                     <a href="#Contacto">Contacto</a>

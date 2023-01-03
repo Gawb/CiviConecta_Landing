@@ -1,0 +1,43 @@
+@font-face {
+    font-family: Nunito-Variablefont_wght;
+    src: url('../fonts/Nunito-VariableFont_wght.ttf');
+}
+body {
+    margin:0;
+    font-family: Nunito-Variablefont_wght;
+}
+
+h1{
+    color: #7468e5;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    background-color: #96cb76;
+    color: white;
+    font-weight: bold;
+    padding: 0.8%;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo>img{
+    width: 400px;
+}
+.message{
+    text-align: center;
+}
+
+@media (max-width: 495px){
+    a{
+        padding: 2%;
+    }
+    h1{
+        padding: 0 8%;
+    }
+}

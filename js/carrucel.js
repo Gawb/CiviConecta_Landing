@@ -1,7 +1,7 @@
 
 const point          = document.querySelectorAll('.point');
 
-//segundo video.
+
 const containerCarrucel = document.querySelector('.box-content');
 const containerBlock = document.querySelector('.carrucel-container__block'); 
 const arrowCarrucelLeft = document.getElementById ('carrucel-arrow-left');
@@ -20,7 +20,6 @@ let widthBlock = 34.4;
 let widthBlockMobile = 19.4;
 
 let widthScreen = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-//363
 
 const DIRECTION ={
     RIGHT: 'RIGHT',
@@ -167,11 +166,11 @@ containerCarrucel.addEventListener('touchend',directionSelector);
 containerBlock.addEventListener('transitionend', reoderOption);
 
 //Disable context menu
-window.oncontextmenu = function (event) {
-    event.preventDefault()
-    event.stopPropagation()
-    return false
-}
+// window.oncontextmenu = function (event) {
+//     event.preventDefault()
+//     event.stopPropagation()
+//     return false
+// }
 
 function touchStart(){
     return function (event){
