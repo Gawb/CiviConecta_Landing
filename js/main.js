@@ -1,52 +1,40 @@
-//botones de ver y Cerrar de  Mision/Vision
-
 //variables vision values:
-const visionDiv = document.querySelector('#vision-div');
-const visionP = document.querySelector('#vision-p');
-const visionImg = document.querySelector('#img-btn-vision');
-const btnVisionP = document.querySelector('#btn-p-vision');
+const visionButton_container = document.querySelector('#vision_button_container');
+const visionButton = document.querySelector('#vision_button');
+const visionArrow  = document.querySelector('#vision_arrow');
+const visionInfo   = document.querySelector('#vision_info');
 
-const btnVision = document.querySelector('#btn-vision');
-
-//variables Mision values:
-const misionDiv = document.querySelector('#mision-div');
-const misionP = document.querySelector('#mision-p');
-const misionImg = document.querySelector('#img-btn-mision');
-const btnMisionP = document.querySelector('#btn-p-mision');
-
-const btnMision = document.querySelector('#btn-mision');
+//variables Mission values:
+const missionButton_container = document.querySelector('#mission_button_container');
+const missionButton = document.querySelector('#mission_button');
+const missionArrow  = document.querySelector('#mission_arrow');
+const missionInfo   = document.querySelector('#mission_info');
 
 //event:
-btnVision.addEventListener('click' , btnOnClickvision);
-btnMision.addEventListener('click' , btnOnClickMision);
+visionButton_container.addEventListener('click' , visionShowInfo);
+missionButton_container.addEventListener('click' , missionShowInfo);
 
 //functions: 
 
-function btnOnClickvision(){
-    visionDiv.classList.toggle('vision');
-    visionDiv.classList.toggle('vision2');
-    visionP.classList.toggle('remove');
-    visionImg.classList.toggle('img-btn-up');
-    visionImg.classList.toggle('img-btn-down');
+function visionShowInfo(){
+    visionArrow.classList.toggle('rotate');
+    visionInfo.classList.toggle('close');
     
-    if(btnVisionP.innerText =='Cerrar'){
-        btnVisionP.innerText ='Ver';
+    if(visionButton.innerText =='Cerrar'){
+        visionButton.innerText ='Ver';
     }else{
-        btnVisionP.innerText ='Cerrar';
+        visionButton.innerText ='Cerrar';
     };
 }
 
-function btnOnClickMision(){
-    misionDiv.classList.toggle('mision');
-    misionDiv.classList.toggle('mision2');
-    misionP.classList.toggle('remove');
-    misionImg.classList.toggle('img-btn-up');
-    misionImg.classList.toggle('img-btn-down');
+function missionShowInfo(){
+    missionArrow.classList.toggle('rotate');
+    missionInfo.classList.toggle('close');
     
-    if(btnMisionP.innerText =='Cerrar'){
-        btnMisionP.innerText ='Ver';
+    if(missionButton.innerText =='Cerrar'){
+        missionButton.innerText ='Ver';
     }else{
-        btnMisionP.innerText ='Cerrar';
+        missionButton.innerText ='Cerrar';
     };
 }
 

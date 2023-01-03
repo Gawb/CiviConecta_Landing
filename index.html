@@ -22,7 +22,7 @@
             <div class="menu-mobile__nav-element">
                 <ul>
                     <li>
-                        <a href="">Inicio</a>
+                        <a href="#inicio">Inicio</a>
                     </li>
                     <li>
                         <p  id= "about-civi-selector" >Sobre Civi
@@ -31,7 +31,7 @@
                     </li>
                     <div class="">
                         <li id="about-civi-mobile" class="about-civi-mobile">
-                            <a href="">Nuestro Servicio</a>
+                            <a href="#sobre-civi">Nuestro Servicio</a>
                         </li>
                         <li id="about-civi-mobile" class="about-civi-mobile">
                             <a href="#Ventajas">Ventajas</a>
@@ -46,9 +46,6 @@
                     </li>
                     <li>
                         <a href="#Contacto">Contacto</a>
-                    </li>
-                    <li>
-                        <a href="">Inicio</a>
                     </li>
                 </ul>
                 <button type="button">Ingresar</button>
@@ -144,9 +141,12 @@
                     <div class="vision_mission__header">
                         <img src="./icons/Yellow HeartBrain - Square - Civicon.svg" alt=" icono corazón amarillo"/>
                         <h2>Visión de Civiconecta</h2>
-                        <button>Cerrar<img class="vision_mission__arrow" src="./icons/Arrow Down - Civicon white.svg" alt="icono flecha"/></button>
+                        <div id="vision_button_container" class="vision_mission__button">
+                            <button id="vision_button">Ver</button>
+                            <img id="vision_arrow" class="vision_mission__arrow rotate" src="./icons/Arrow Down - Civicon white.svg" alt="icono flecha"/>
+                        </div>
                     </div>
-                    <div class="vision_mission__info">
+                    <div id="vision_info" class="vision_mission__info close">
                         <p>
                             Convertirnos en una institución líder en el ámbito educacional que impulse el
                             desarrollo de aprendizajes y actitudes, con foco en las habilidades
@@ -162,9 +162,12 @@
                     <div class="vision_mission__header">
                         <img src="./icons/Yellow HeartBrain - Square - Civicon.svg" alt=" icono corazón amarillo"/>
                         <h2>Misión de Civiconecta</h2>
-                        <button>Cerrar<img class="vision_mission__arrow" src="./icons/Arrow Down - Civicon white.svg" alt="icono flecha"/></button>
+                        <div id="mission_button_container" class="vision_mission__button">
+                            <button id="mission_button">Ver</button>
+                            <img id="mission_arrow" class="vision_mission__arrow rotate" src="./icons/Arrow Down - Civicon white.svg" alt="icono flecha"/>
+                        </div>
                     </div>
-                    <div class="vision_mission__info">
+                    <div id="mission_info" class="vision_mission__info close">
                         <p>
                             Crear recursos y materiales educativos cercanos a los
                             intereses de los y las estudiantes, atingentes con las
@@ -446,7 +449,7 @@
         </div>
         <div class="copyright">
             <p>Santiago, Chile.</p>
-            <p>® 2022, CiviConecta SpA. Todos los derechos reservados.</p>
+            <p>® 2022, CiviConecta SpA.<br/>Todos los derechos reservados.</p>
         </div>
     </footer>
 
