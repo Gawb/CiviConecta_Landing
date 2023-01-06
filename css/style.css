@@ -479,15 +479,7 @@ nav{
     line-height: 16px;
 } 
 }
-@media (max-width: 387px) {
-    .first-art_content > h1{
-        font-size: 22px;
-    }   
-    .first-art_content > h1:nth-child(3) {
-        letter-spacing: 0.2px;
-        line-height: 16px;
-    } 
-    }
+
 
 /* -----START second section---- */
 .second-art{
@@ -1413,6 +1405,14 @@ margin: 0 4px;
        .menu-mobile{
         width: 100%;
       }
+
+      /* -----qué es civi */
+      .what-is h1 {
+        font-size: var(--h1s);
+    }
+    .what-is > h1> img {
+        width: 44%;
+    }
       /* ------carrusel */
       .third-art>h1 {
         width: 300px;
@@ -1425,6 +1425,9 @@ margin: 0 4px;
         }
         .block{
             min-width: 80.4%;
+        }
+        .block-info>img {
+            padding: 38% 0% 0% 26%;
         }
         .block.block-unselected {
             display: grid;
@@ -1462,4 +1465,34 @@ margin: 0 4px;
         }
         
       
+}
+@media (max-width: 387px) {
+    .first-art_content > h1:nth-child(4) {
+        letter-spacing: 0.7px;
+    }
+    .first-art_content > h1:nth-child(3) {
+        letter-spacing: 0.2px;
+        line-height: 16px;
+    } 
+    .first-art_content>h1{
+        font-size: 18px;
+    }
+    .block-info>img {
+        padding: 38% 0% 0% 18%;
+    }
+    .block-info {
+        grid-template-rows: 30% 70%;
+    }
+    .block-info>.short-title {
+        padding-right: 0px;
+    }
+    .div-logo {
+        padding: 0% 16% 0 6%;
+    }
+    .vision_mission__info {
+        height: 282px;
+    }
+    .menu-mobile__nav-element button {
+        padding: 12px 92px;
+    }
 }
