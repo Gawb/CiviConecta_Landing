@@ -506,13 +506,16 @@ nav{
     margin-top: -8px;
 }
 .video-civi{
-    margin-top: 2%;
+    padding: 2% 0 0 0;
+    /* position: absolute; */
     display: flex;
+    align-items: center;
     justify-content: center;
 }
-.video-civi img{
+.video-civi iframe{
     width: 58%;
 }
+
 .quote{
     display: flex;
     justify-content: center;
@@ -638,6 +641,11 @@ nav{
     .quote > p{
     padding: 1% 10%;
     }
+    .video-civi iframe{
+        width:640px ;
+        height:360px;
+    }
+    
 }
 @media (max-width: 850px){
     .vision_mission{
@@ -876,7 +884,7 @@ z-index: 1;
     grid-column: 2;
     grid-row: 1;
     text-align: left;
-    padding: 6% 8% 0 0;
+    padding: 6% 6% 0 0;
     margin:0;
     transition-duration: var(--carrucelTransitinElements);
 }
