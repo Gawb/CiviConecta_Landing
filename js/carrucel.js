@@ -117,7 +117,6 @@ const reorderSlideMobile = ()=>{
     containerBlock.children[2].children[1].classList.remove('unselected-box-info');
     containerBlock.children[2].children[1].classList.add('block-info');
     containerBlock.children[2].children[0].children[0].classList.remove('curtain');
- 
     isInTransition =  false;
     pointSelecter();
 
@@ -196,8 +195,7 @@ function directionSelector(){
 }
 
 function getPositionX(event){
-    return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX
-     
+    return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX     
 }
 
 function reoderOption(){
