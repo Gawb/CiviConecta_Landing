@@ -8,6 +8,7 @@
     --greenCivi:      #96cb76;
     --greenCiviOpa:   #96cb7620;
     --pinkCivi:       #ec5f7b;
+    --pinkCiviOpa:    #ec5f7b20;
     --BlueCivi:       #7468e5;
     --BlueCiviDark:   #645cd4;
     --BlueCiviOpa:    #7468e520;  
@@ -1110,9 +1111,165 @@ z-index: 1;
     width: 36px;
     cursor: pointer;
 }
-
-/* -- fifth section -- */
+/* -- fivfth section -- */
 .fifth-art{
+    background-color: var(--pinkCiviOpaCurtain);
+    background-image: url(../images/backgraunds/BG---Civi-Red---Testimonios.jpg);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 4% 0 10% 0;
+}
+
+.fifth-art>h1 {
+    margin-top: 0px;
+    color: var(--pinkCivi);
+    padding: 0% 37%;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 112px;
+    /*overflow-x: hidden; */
+}
+
+.container_opinion_carrusel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_opinion_carrusel>img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+}
+.school_boxes_container{
+    width: 80%;
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+
+}
+
+.box_school{
+    height: 348px;
+    width: 348px;
+    background-color: var(--white);
+    border-radius: 8px;
+    border:1px solid var(--pinkCivi) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 2%;
+    padding: 0;
+    position: relative;
+    transition: all 1.5s ease;
+}
+.box_school.open{
+    background-color: var(--pinkCiviOpa);
+    transition: all 1.5s ease;
+}
+
+.box_school>.img{
+    background-color: var(--white);
+    width: 154px;
+    height: 138px;
+    border: 1px solid var(--pinkCivi);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box_school>.img>img{
+    width:66px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.School_name{
+font-weight: bold;
+color: var(--greyCivi);
+margin-bottom: 0px;
+
+}
+.director_name{
+    color: var(--greyCivi);
+    margin: 0px;
+    font-weight: lighter;
+    font-size: large;
+}
+.title_name{
+    color: var(--greyCivi);
+    margin: 0px;
+}
+.comments_section {
+    position: absolute;
+    top: 0px;
+    height: 348px;
+    z-index: 2;
+    padding: 0px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: top, background-color 1.1s ease ;
+    transition: background-color 1.5s ease;
+
+}
+.comments_section.close {
+    top: 0%; /* Cambiar la posición */
+    height: 0%;
+}
+.comments{
+    color: var(--greyCivi);
+    text-align: justify;
+    margin: 14% 4%;
+    padding: 0% 4%;
+    height: 67%;
+    overflow-y: hidden;
+}
+.comments.open{
+    color: var(--blackCivi);
+    background-color: var(--pinkCiviOpa);
+    margin: 0%;
+    padding: 20px 8% 0 8%;
+    height: 94%;
+    text-align: justify;
+    /* transition: all 2.3s ease; */
+    border-radius: 8px;
+    transition-duration: 0.8s
+
+}
+
+.boton_mas, .boton_menos{
+    width: 32px;
+    cursor: pointer;
+    margin-top: 38px;
+    z-index: 3;
+
+}
+
+/* .boton_menos{
+    margin-top: 102px;
+} */
+.boton_mas.close{
+    display: none;
+}
+
+.boton_menos.close{
+    display: none;
+}
+
+/* -- sixth section -- */
+.sixth-art{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1465,6 +1622,11 @@ margin-bottom: 44px;
 padding: 0;
 text-align:left;
 }
+/* opiniones */
+.fifth-art>h1 {
+    font-size: var(--h1s);
+    padding: 0% 16%
+}
 /* ------footer */
 .copyright p:nth-child(2) {
 margin-top: 0px;
@@ -1500,4 +1662,9 @@ padding: 0px 14%;
     .menu-mobile__nav-element button {
         padding: 12px 92px;
     }
+    /* opiniones */
+.fifth-art>h1 {
+    font-size: var(--h1s);
+    padding: 0% 16%
+}
 }
