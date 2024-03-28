@@ -50,10 +50,10 @@ function visionShowInfo(){
     visionArrow.classList.toggle('rotate');
     visionInfo.classList.toggle('close');
     
-    if(visionButton.innerText =='Cerrar'){
-        visionButton.innerText ='Ver';
+    if(visionButton.innerText =='Ocultar'){
+        visionButton.innerText ='Mostrar';
     }else{
-        visionButton.innerText ='Cerrar';
+        visionButton.innerText ='Ocultar';
     };
 }
 
@@ -61,10 +61,10 @@ function missionShowInfo(){
     missionArrow.classList.toggle('rotate');
     missionInfo.classList.toggle('close');
     
-    if(missionButton.innerText =='Cerrar'){
-        missionButton.innerText ='Ver';
+    if(missionButton.innerText =='Ocultar'){
+        missionButton.innerText ='Mostrar';
     }else{
-        missionButton.innerText ='Cerrar';
+        missionButton.innerText ='Ocultar';
     };
 }
 
