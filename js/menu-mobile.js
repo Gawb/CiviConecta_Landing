@@ -4,7 +4,7 @@ const linkBeginning = document.querySelector('#link_beginning');
 const linkOurServices = document.querySelector('#link_our_services');
 const linkAdvantage = document.querySelector('#link_advantage');
 const linkProfesional = document.querySelector('#link_profesionals');
-// const linkTestimonials = document.querySelector('#link_testimonials');
+const linkTestimonials = document.querySelector('#link_testimonials');
 const linkContact = document.querySelector('#link_contact');
 const btnBurgerNav = document.querySelector('#btn-burger-nav');
 
@@ -23,7 +23,7 @@ linkBeginning.addEventListener('click', moveAsideMenu);
 linkOurServices.addEventListener('click', moveAsideMenu);
 linkAdvantage.addEventListener('click', moveAsideMenu);
 linkProfesional.addEventListener('click', moveAsideMenu);
-// linkTestimonials.addEventListener('click', moveAsideMenu);
+linkTestimonials.addEventListener('click', moveAsideMenu);
 linkContact.addEventListener('click', moveAsideMenu);
 
 sobreCiviBtn.addEventListener('click' , showElement);
