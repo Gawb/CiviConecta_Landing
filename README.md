@@ -1,2 +1,3 @@
 # CiviConecta
-Levantamiento del landing de portal educativo. 
+Maquetación del landing de portal educativo. 
+https://www.civiconecta.cl
